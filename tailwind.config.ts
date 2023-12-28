@@ -13,6 +13,7 @@ const config: Config = {
     extend: {
       colors: {
         background: withOpacity("--background"),
+        text: withOpacity("--text"),
       },
     },
   },
