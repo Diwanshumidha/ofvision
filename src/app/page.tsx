@@ -4,6 +4,7 @@ import HeroSection from "@/components/HeroSection";
 import ManagementSolutions from "@/components/ManagementSolution";
 import Partners from "@/components/Partners";
 import AboutSection from "@/components/About";
+import Faq from "@/components/Faq";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Details />
       <Partners />
       <AboutSection />
+      <Faq/>
     </main>
   );
 }
