@@ -13,7 +13,7 @@ const Button = (props: ButtonProps) => {
   return (
     <button
       {...otherProps}
-      className={`px-4 py-3 font-bold  border-white border-2 border-solid rounded-full
+      className={`px-5 py-2 font-bold  border-white border-2 border-solid rounded-full
       ${
         background === "black"
           ? "bg-background text-text hover:bg-text hover:text-background transition-all"

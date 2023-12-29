@@ -53,7 +53,7 @@ const ManagementSolution = ({
       variants={FadeinView}
       initial="initial"
       whileInView="animate"
-      className=" space-y-3 w-[350px] h-[400] flex flex-col  items-center "
+      className=" space-y-3 w-full lg:w-[350px] h-[400] flex flex-col  items-center "
       custom={idx}
     >
       <div className="image w-[200px] h-[300px] bg-white"> dasd</div>

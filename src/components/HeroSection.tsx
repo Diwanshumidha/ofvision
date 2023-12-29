@@ -23,10 +23,14 @@ const HeroSection = () => {
             Outwork them. Outwork them all. Take everything.
           </span>
         </p>
-        <p className=" max-sm:hidden text-lg lg:text-3xl flex flex-col gap-1 justify-center font-bold  text-background w-max   mt-9">
+        <Motion
+          initial={{ width: "10%" }}
+          animate={{ width: "100%" }}
+          className=" max-sm:hidden text-lg lg:text-3xl flex flex-col gap-1 justify-center font-bold  text-background w-max   mt-9"
+        >
           <span className="bg-text w-max ">CHOOSE WHAT WORKS </span>
           <span className="bg-text w-max mx-auto ">BEST FOR YOU ❤️‍🔥</span>
-        </p>
+        </Motion>
         <div className=" flex max-sm:hidden  gap-3 mt-5">
           {" "}
           <Button background="white"> Book a call</Button>
@@ -42,7 +46,7 @@ const HeroSection = () => {
         <span className="bg-text w-max ">CHOOSE WHAT WORKS </span>
         <span className="bg-text w-max mx-auto ">BEST FOR YOU ❤️‍🔥</span>
       </p>
-      <div className=" flex sm:hidden  gap-3 mt-5">
+      <div className=" flex sm:hidden flex-col   gap-3 mt-5">
         {" "}
         <Button background="white" className=" text-sm">
           {" "}

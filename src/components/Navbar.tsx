@@ -26,7 +26,7 @@ const Navbar = () => {
       <NavMobile />
 
       <nav className=" hidden lg:block">
-        <ul className="hidden lg:flex lg:items-center w-[240px] justify-center flex-wrap gap-5 text-sm">
+        <ul className="hidden lg:flex lg:items-center  justify-center  gap-5 text-sm">
           {routes.map((route) => {
             const { href, title } = route;
             return (

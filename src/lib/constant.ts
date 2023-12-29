@@ -24,3 +24,7 @@ export const routes = [
     Icon: PiChatCircleBold,
   },
 ];
+
+export const Details = {
+  email: "something@gmail.com",
+};
