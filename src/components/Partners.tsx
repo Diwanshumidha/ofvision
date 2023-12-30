@@ -5,23 +5,29 @@ import { OpacityAnimation } from "@/lib/animations";
 import Button from "./Button";
 
 const PartnersDetails = {
-  heading: "YOUR PARTNER IN SUCCESS",
+  heading: "YOUR ALLY IN ACHIEVEMENT",
   paragraph: () => (
     <p className=" flex flex-col gap-3">
       <span>
-        Looking to elevate your OnlyFans game to the next level? Look no further
-        than OfVision Agency! Our trusted management team has been helping
-        Australian creators succeed since day one, and we’re ready to help you
-        thrive in 2023. we know the ins and outs of the OnlyFans industry and
-        are committed to your success.
+        Ready to take your OnlyFans experience to unprecedented heights? Embrace
+        the exceptional services of Ofvision Agency! Our esteemed management
+        team has been pivotal in steering Australian creators towards triumph
+        since our inception, and we&apos;re poised to elevate your success in
+        2023.
       </span>
+
       <span>
-        Our agency offers top-notch support, expertise, and structure to ensure
-        your creator account performs at its highest level.
+        Armed with an in-depth understanding of the intricacies of the OnlyFans
+        industry, we are unwaveringly dedicated to propelling you to new
+        heights. At Ofvision, our agency provides unparalleled support, expert
+        guidance, and a robust framework to ensure optimal performance for your
+        creator account.
       </span>
+
       <span>
-        Ready to take your OnlyFans to the next level? Join OfVision Agency
-        today and start seeing real results!
+        Embark on the journey to elevate your OnlyFans presence with Ofvision
+        Agency. Join us today and witness tangible, substantial results that
+        will redefine your success in the dynamic world of content creation.
       </span>
     </p>
   ),
@@ -34,14 +40,12 @@ const Partners = () => {
         <Content></Content>
       </div>
       <div className="flex-1 w-full max-w-[441px] ">
-        <div className=" h-[400px] bg-white ">
-        <img
-          alt="Image"
-          className="w-full h-full object-cover"
-          src={
-            "/partner_img.webp"
-          }
-        />
+        <div className=" h-[400px]  ">
+          <img
+            alt="Image"
+            className=" object-contain"
+            src={"/partner_img.webp"}
+          />
         </div>
       </div>
     </section>

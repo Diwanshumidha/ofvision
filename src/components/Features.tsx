@@ -7,17 +7,15 @@ import { FadeinView } from "@/lib/animations";
 const FeaturesArray = [
   {
     heading: "STRONG AGENCY NETWORK",
-    paragraph: `Our big network with other known agencies can benefit you. From cross
-        promotions to exposure on various platforms, we can leverage our
-        connections for your growth.`,
+    paragraph: `Our agency's strong network with top-notch partners benefits you. From cross-promotions to broad platform exposure, we leverage connections for your growth. Let's elevate your game with Ofvision!`,
   },
   {
-    heading: "BIG MONEY MADE FOR EVERYONE",
-    paragraph: `It's an assurance that the potential to earn a substantial income on platforms like OnlyFans is not only real but achievable. By joining our agency, you're tapping into a supportive network that helps you maximise your earnings.`,
+    heading: "BIG EARNINGS FOR ALL",
+    paragraph: `Rest assured, making significant income on platforms like OnlyFans is not just a dream—it's doable. Join our agency, and you're plugging into a supportive network that maximizes your earning potential.`,
   },
   {
-    heading: "MAXIMUM OF 5 MODELS ONLY",
-    paragraph: `Small number right? Well not necessarily… We concentrate on a select group, we can ensure that the content is of the highest quality.Quality over quantity every time.`,
+    heading: "LIMITED TO 5 MODELS",
+    paragraph: `Small number, right? But here's the scoop – we focus on a select group to guarantee top-notch content.Quality over quantity, always.`,
   },
 ];
 

@@ -9,7 +9,8 @@ const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "OfVision",
-  description: "Some Description",
+  description:
+    "Welcome to OF Vision, the leading agency to help models to unlock their full potential and earn as much as they want. Our team consists of experts in every aspect, to be able to help you to maximize your earnings and lower your effort.",
 };
 
 export default function RootLayout({
