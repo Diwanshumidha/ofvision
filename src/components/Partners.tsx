@@ -34,7 +34,15 @@ const Partners = () => {
         <Content></Content>
       </div>
       <div className="flex-1 w-full max-w-[441px] ">
-        <div className=" h-[400px] bg-white "></div>
+        <div className=" h-[400px] bg-white ">
+        <img
+          alt="Image"
+          className="w-full h-full object-cover"
+          src={
+            "/partner_img.webp"
+          }
+        />
+        </div>
       </div>
     </section>
   );

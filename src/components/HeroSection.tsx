@@ -3,6 +3,7 @@ import { Motion } from "./motion";
 import { OpacityAnimation } from "@/lib/animations";
 import Button from "./Button";
 import Link from "next/link";
+import Image from "next/image";
 
 const HeroSection = () => {
   return (
@@ -56,7 +57,15 @@ const HeroSection = () => {
       </div>
 
       <div>
-        <div className=" w-[250px] h-[350px]  bg-white">asddsa</div>
+        <div className=" w-[250px] h-[350px]  bg-white">
+        <img
+          alt="Image"
+          className=" w-full h-full object-cover"
+          src={
+            "/hero_img.webp"
+          }
+        />
+        </div>
       </div>
 
       <p className=" text-lg lg:text-3xl sm:hidden flex flex-col gap-1 justify-center font-bold  text-background w-max   mt-9">

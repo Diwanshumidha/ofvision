@@ -43,7 +43,15 @@ const AboutSection = () => {
         ))}
       </div>
       <div className="flex-1 w-full max-w-[441px] ">
-        <div className=" h-[450px] bg-white"></div>
+        <div className=" h-[450px] bg-white">
+        <img
+          alt="Image"
+          className=" w-full h-full object-cover"
+          src={
+            "/offer_img.webp"
+          }
+        />
+        </div>
       </div>
     </section>
   );

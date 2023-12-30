@@ -36,7 +36,13 @@ const Details = () => {
   return (
     <section className=" flex flex-col md:flex-row gap-7 justify-center    ">
       <div className="flex-1 w-full aspect-[1080/1350] bg-white max-w-[441px] ">
-        das
+      <img
+          alt="Image"
+          className=" w-full h-full object-cover"
+          src={
+            "/detail_img.webp"
+          }
+        />
       </div>
       <div className=" flex flex-col  gap-4 lg:gap-10">
         {Steps.map((item, idx) => (
