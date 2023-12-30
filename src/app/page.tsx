@@ -6,6 +6,7 @@ import Partners from "@/components/Partners";
 import AboutSection from "@/components/About";
 import Faq from "@/components/Faq";
 import { Motion } from "@/components/motion";
+import Info from "@/components/Info";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <Details />
       <Partners />
       <AboutSection />
+      <Info/>
       <Faq />
     </main>
   );
