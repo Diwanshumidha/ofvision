@@ -6,19 +6,19 @@ import { FadeinView } from "@/lib/animations";
 const ManagementArray = [
   {
     heading: "GUIDED CONTENT ",
-    paragraph: `Focus solely on creating captivating content while our team provides you with personalised shooting recommendations. `,
+    paragraph: `At OF VISION, we redefine success in the world of OnlyFans by embracing a 'no time' philosophy. Our approach centers on efficiency, eliminating unnecessary time constraints to amplify creators' journeys. `,
   },
   {
     heading: " REVENUE FORMULA",
-    paragraph: `We Implement our growth formula which consists of psychology and time tested strategies to earn more from your fans tailored to your unique goals and audience.`,
+    paragraph: `At OF VISION, we've cracked the code to revenue on OnlyFans. Our agency isn't just about management; it's about mastering the revenue formula that fuels creators' success.`,
   },
   {
     heading: "MARKETING FORMULA",
-    paragraph: `We are on top of all the latest marketing trends to get your account booming. We do all the research, implementation and take advantage of social media platforms.`,
+    paragraph: `At OF VISION, we don't just manage; we master the art of marketing on OnlyFans. Our agency is built on a robust marketing formula designed to amplify creators' reach and engagement.`,
   },
   {
     heading: "DAILY MANAGEMENT",
-    paragraph: `We manage your profile and take care of everything from a to z so you can focus on making amazing content while we grow your brand.`,
+    paragraph: `At OF VISION, daily management isn't just about routine tasks; it's about orchestrating a seamless and thriving OnlyFans presence for creators. Our agency excels in daily management, ensuring creators can focus on content creation while we handle the rest.`,
   },
 ];
 const ManagementSolutions = () => {
@@ -29,7 +29,7 @@ const ManagementSolutions = () => {
       </h2>
       <div className=" flex flex-col gap-5 justify-center max-md:items-center  text-center md:flex-row">
         {ManagementArray.map((item, idx) => (
-          <ManagementSolution key={item.heading} data={item} idx={idx} />
+          <ManagementSolution key={idx} data={item} idx={idx} />
         ))}
       </div>
     </section>

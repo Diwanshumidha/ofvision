@@ -1,14 +1,30 @@
 "use client";
 import React from "react";
 import { Motion } from "./motion";
-import { FadeinView, OpacityAnimation } from "@/lib/animations";
+import { OpacityAnimation } from "@/lib/animations";
 import Button from "./Button";
 
 const PartnersDetails = {
   heading: "YOUR PARTNER IN SUCCESS",
-  paragraph: `Looking to elevate your OnlyFans game to the next level? Look no further than Nonstop Agency! Our trusted management team has been helping Australian creators succeed since day one, and we’re ready to help you thrive in 2023.
-  we know the ins and outs of the OnlyFans industry and are committed to your success. \n\n Our agency offers top-notch support, expertise, and structure to ensure your creator account performs at its highest level.
-  Ready to take your OnlyFans to the next level? Join Nonstop Agency today and start seeing real results!`,
+  paragraph: () => (
+    <p className=" flex flex-col gap-3">
+      <span>
+        Looking to elevate your OnlyFans game to the next level? Look no further
+        than OfVision Agency! Our trusted management team has been helping
+        Australian creators succeed since day one, and we’re ready to help you
+        thrive in 2023. we know the ins and outs of the OnlyFans industry and
+        are committed to your success.
+      </span>
+      <span>
+        Our agency offers top-notch support, expertise, and structure to ensure
+        your creator account performs at its highest level.
+      </span>
+      <span>
+        Ready to take your OnlyFans to the next level? Join OfVision Agency
+        today and start seeing real results!
+      </span>
+    </p>
+  ),
 };
 
 const Partners = () => {
@@ -18,7 +34,7 @@ const Partners = () => {
         <Content></Content>
       </div>
       <div className="flex-1 w-full max-w-[441px] ">
-        <div className=" h-[300px] bg-white "></div>
+        <div className=" h-[400px] bg-white "></div>
       </div>
     </section>
   );
@@ -27,6 +43,7 @@ const Partners = () => {
 export default Partners;
 
 const Content = () => {
+  const Paragraph = PartnersDetails.paragraph;
   return (
     <Motion
       {...OpacityAnimation}
@@ -36,7 +53,9 @@ const Content = () => {
       }}
     >
       <h3 className=" text-2xl font-semibold">{PartnersDetails.heading}</h3>
-      <p>{PartnersDetails.paragraph}</p>
+
+      <Paragraph />
+
       <Button background="white">About us </Button>
     </Motion>
   );

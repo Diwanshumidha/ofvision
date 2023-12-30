@@ -4,6 +4,7 @@ import React from "react";
 import { routes } from "@/lib/constant";
 import { Motion } from "./motion";
 import { FadeinView, OpacityAnimation } from "@/lib/animations";
+import { Details } from "@/lib/constant";
 
 const Footer = () => {
   return (
@@ -16,7 +17,6 @@ const Footer = () => {
       whileInView="animate"
       className="py-20 px-4 lg:px-7 mx-auto flex-col justify-center w-full text-text h-20 lg:h-24 items-center"
     >
-
       <div className="flex pb-10 justify-center">
         {" "}
         <Image
@@ -35,7 +35,7 @@ const Footer = () => {
           {routes.map((route) => {
             const { href, title } = route;
             return (
-                <li key={title} className=" list-none ">
+              <li key={title} className=" list-none ">
                 <Motion {...OpacityAnimation}>
                   <a
                     href={href}
@@ -49,11 +49,11 @@ const Footer = () => {
           })}
         </ul>
         <div className="flex pb-20 justify-center flex-col text-center gap-4 font-light items-center py-4">
-        <p>ofvision@gmail.com</p>
-        <p>© 2023 NONSTOP AGENCY | ALL RIGHTS RESERVED</p>
+          <p>{Details.email}</p>
+          <p>© 2023 OfVision | ALL RIGHTS RESERVED</p>
         </div>
       </nav>
-       </Motion>
+    </Motion>
   );
 };
 

@@ -4,7 +4,7 @@ import { Details } from "@/lib/constant";
 
 const Contact = () => {
   return (
-    <section className=" w-full scroll-m-5" id="contact">
+    <section className=" w-full scroll-m-5 px-5" id="contact">
       <div className="flex flex-col w-full gap-1 ">
         <h2 className=" mx-auto text-3xl ">Contact Us</h2>
         <p className=" text-secondary-gray  text-center">

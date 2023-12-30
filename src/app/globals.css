@@ -51,3 +51,14 @@ h6 {
 #__next {
   isolation: isolate;
 }
+
+@keyframes details-show {
+  from {
+    opacity: 0;
+    transform: translateY(3em);
+  }
+}
+
+details[open] > *:not(summary) {
+  animation: details-show 200ms ease-in-out;
+}

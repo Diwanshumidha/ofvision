@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { Motion } from "./motion";
-import type { Variants } from "framer-motion";
 import { FadeinView } from "@/lib/animations";
 
 // TODO: Put extra thing in constant files
@@ -13,16 +12,12 @@ const FeaturesArray = [
         connections for your growth.`,
   },
   {
-    heading: "STRONG AGENCY NETWORK",
-    paragraph: `Our big network with other known agencies can benefit you. From cross
-        promotions to exposure on various platforms, we can leverage our
-        connections for your growth.`,
+    heading: "BIG MONEY MADE FOR EVERYONE",
+    paragraph: `It's an assurance that the potential to earn a substantial income on platforms like OnlyFans is not only real but achievable. By joining our agency, you're tapping into a supportive network that helps you maximise your earnings.`,
   },
   {
-    heading: "STRONG AGENCY NETWORK",
-    paragraph: `Our big network with other known agencies can benefit you. From cross
-        promotions to exposure on various platforms, we can leverage our
-        connections for your growth.`,
+    heading: "MAXIMUM OF 5 MODELS ONLY",
+    paragraph: `Small number right? Well not necessarily… We concentrate on a select group, we can ensure that the content is of the highest quality.Quality over quantity every time.`,
   },
 ];
 
@@ -47,6 +42,9 @@ const Feature = ({
 }) => {
   return (
     <Motion
+      viewport={{
+        once: true,
+      }}
       variants={FadeinView}
       initial="initial"
       whileInView="animate"

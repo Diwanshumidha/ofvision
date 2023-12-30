@@ -1,6 +1,7 @@
 "use server";
 
 import ContactFormEmail from "@/emails/contact-email";
+import { Details } from "@/lib/constant";
 import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API);
@@ -38,9 +39,15 @@ export async function SendEmail(e: FormData) {
 
     await resend.emails.send({
       from: "Contact <onboarding@resend.dev>",
-      to: "saidiwanshu1880@gmail.com",
-      subject: "Hello World",
-      react: <ContactFormEmail message={message} senderEmail={senderemail} />,
+      to: Details.email,
+      subject: "You got a Message",
+      react: (
+        <ContactFormEmail
+          name={senderName}
+          message={message}
+          senderEmail={senderemail}
+        />
+      ),
       reply_to: senderemail,
     });
 

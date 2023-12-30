@@ -5,7 +5,7 @@ import { IoPricetagsOutline } from "react-icons/io5";
 export const routes = [
   {
     title: "Home",
-    href: "#",
+    href: "/",
     Icon: BiHomeAlt2,
   },
   {
@@ -14,8 +14,8 @@ export const routes = [
     Icon: FiSearch,
   },
   {
-    title: "Pricing",
-    href: "#",
+    title: "Contact",
+    href: "/contact",
     Icon: IoPricetagsOutline,
   },
   {
@@ -26,5 +26,6 @@ export const routes = [
 ];
 
 export const Details = {
-  email: "something@gmail.com",
+  email: "management@of-vision.eu",
+  instagram: "https://www.instagram.com/ofvisionc",
 };
