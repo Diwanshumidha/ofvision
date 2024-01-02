@@ -46,25 +46,31 @@ const HeroSection = () => {
             }}
             className="bg-text w-max mx-auto text-nowrap "
           >
-            BEST FOR YOU❤️‍🔥
+            BEST FOR YOU ❤️‍🔥
           </Motion>
         </div>
         <div className=" flex max-sm:hidden  gap-3 mt-5">
           {" "}
-          <Button background="white"> Book a call</Button>
-          <Button background="black"> Apply online</Button>
+          <Link
+            href={"#calendly"}
+            className="px-5 py-2 font-bold  border-white border-2 border-solid rounded-full  bg-text text-background hover:bg-background hover:text-text transition-all"
+          >
+            {" "}
+            Book a call
+          </Link>
+          <Button background="black" className=" text-sm">
+            <Link href={"/contact"}>Apply online</Link>
+          </Button>
         </div>
       </div>
 
       <div>
         <div className=" w-[250px] h-[350px]  bg-white">
-        <img
-          alt="Image"
-          className=" w-full h-full object-cover"
-          src={
-            "/hero_img.webp"
-          }
-        />
+          <img
+            alt="Image"
+            className=" w-full h-full object-cover"
+            src={"/hero_img.webp"}
+          />
         </div>
       </div>
 
@@ -74,10 +80,13 @@ const HeroSection = () => {
       </p>
       <div className=" flex sm:hidden flex-col   gap-3 mt-5">
         {" "}
-        <Button background="white" className=" text-sm">
+        <Link
+          href={"#calendly"}
+          className="px-5 py-2 font-bold  border-white border-2 border-solid rounded-full  bg-text text-background hover:bg-background hover:text-text transition-all"
+        >
           {" "}
           Book a call
-        </Button>
+        </Link>
         <Button background="black" className=" text-sm">
           <Link href={"/contact"}>Apply online</Link>
         </Button>

@@ -7,22 +7,18 @@ const ManagementArray = [
   {
     heading: "GUIDED CONTENT ",
     paragraph: `At OF VISION, we redefine success in the world of OnlyFans by embracing a 'no time' philosophy. Our approach centers on efficiency, eliminating unnecessary time constraints to amplify creators' journeys. `,
-    image: "/Fans.webp",
   },
   {
     heading: " REVENUE FORMULA",
     paragraph: `At OF VISION, we've cracked the code to revenue on OnlyFans. Our agency isn't just about management; it's about mastering the revenue formula that fuels creators' success.`,
-    image: "/Graph.webp",
   },
   {
     heading: "MARKETING FORMULA",
     paragraph: `At OF VISION, we don't just manage; we master the art of marketing on OnlyFans. Our agency is built on a robust marketing formula designed to amplify creators' reach and engagement.`,
-    image: "/Statement.webp",
   },
   {
     heading: "DAILY MANAGEMENT",
     paragraph: `At OF VISION, daily management isn't just about routine tasks; it's about orchestrating a seamless and thriving OnlyFans presence for creators. Our agency excels in daily management, ensuring creators can focus on content creation while we handle the rest.`,
-    image: "/Shares.webp",
   },
 ];
 const ManagementSolutions = () => {
@@ -60,13 +56,6 @@ const ManagementSolution = ({
       className=" space-y-3 w-full lg:w-[350px] h-[400] flex flex-col  items-center "
       custom={idx}
     >
-      <div className="image w-full  sm:w-[250px] h-[250px] bg-white  ">
-        <img
-          className="object-cover w-full h-full"
-          src={data.image}
-          alt={data.heading}
-        />
-      </div>
       <h2 className=" text-xl font-bold">
         {idx + 1}. {data.heading}
       </h2>

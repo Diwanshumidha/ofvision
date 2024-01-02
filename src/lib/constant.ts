@@ -9,19 +9,19 @@ export const routes = [
     Icon: BiHomeAlt2,
   },
   {
-    title: "Explore",
-    href: "#",
-    Icon: FiSearch,
-  },
-  {
     title: "Contact",
     href: "/contact",
     Icon: IoPricetagsOutline,
   },
   {
     title: "About",
-    href: "#",
+    href: "#about",
     Icon: PiChatCircleBold,
+  },
+  {
+    title: "Book a call",
+    href: "#calendly",
+    Icon: FiSearch,
   },
 ];
 

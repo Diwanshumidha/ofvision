@@ -35,7 +35,10 @@ const PartnersDetails = {
 
 const Partners = () => {
   return (
-    <section className=" flex flex-col md:flex-row gap-7 justify-center max-md:items-center  ">
+    <section
+      id="about"
+      className=" flex flex-col md:flex-row gap-7 justify-center max-md:items-center  "
+    >
       <div className="flex flex-col  gap-4 lg:gap-10">
         <Content></Content>
       </div>

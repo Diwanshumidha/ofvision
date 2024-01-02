@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { Motion } from "./motion";
-import { FadeinView, OpacityAnimation } from "@/lib/animations";
+import { OpacityAnimation } from "@/lib/animations";
 
 const About = [
   {
@@ -44,13 +44,11 @@ const AboutSection = () => {
       </div>
       <div className="flex-1 w-full max-w-[441px] ">
         <div className=" h-[450px] bg-white">
-        <img
-          alt="Image"
-          className=" w-full h-full object-cover"
-          src={
-            "/offer_img.webp"
-          }
-        />
+          <img
+            alt="Image"
+            className=" w-full h-full object-cover"
+            src={"/offer_img.webp"}
+          />
         </div>
       </div>
     </section>
